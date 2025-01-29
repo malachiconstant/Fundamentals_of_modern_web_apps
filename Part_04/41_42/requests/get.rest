@@ -1,0 +1,14 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+
+{
+  "title": "jojo",
+  "author": "koko",
+  "url": "yahoo.com",
+  "likes": 2
+}
+
+
+###
+
+GET http://localhost:3003/api/blogs
