@@ -1,0 +1,24 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+
+{
+  "title": "another thins",
+  "author": "gagaga",
+  "url": "batlassian.com",
+  "likes": 13
+}
+
+
+###
+
+GET http://localhost:3003/api/blogs
+
+###
+
+PUT http://localhost:3003/api/blogs/67a227789666de1fe7e5f59a
+Content-Type: application/json
+
+{
+  "title": "Go To Statement Considered Harmful",
+  "likes": 82
+}
