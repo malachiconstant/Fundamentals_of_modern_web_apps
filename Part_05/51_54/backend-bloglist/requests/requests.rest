@@ -1,0 +1,66 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+
+{
+  "title": "adding new blog",
+  "author": "author one",
+  "url": "batlassian.com",
+  "likes": 13
+}
+
+
+###
+
+GET http://localhost:3003/api/blogs
+
+###
+
+GET http://localhost:3003/api/users
+
+###
+
+POST http://localhost:3003/api/blogs/
+Content-Type: application/json
+
+{
+  "title": "gallo there",
+  "likes": 4,
+
+  "author": "this guy",
+  "userId": "67a3bc02a31e5a161b4697b0"
+}
+
+###
+
+POST http://localhost:3003/api/users
+Content-Type: application/json
+
+{
+  "username": "admin2",
+  "name": "joe jonas",
+  "password": "admin2"
+}
+
+###
+
+POST http://localhost:3003/api/login
+Content-Type: application/json
+
+{
+ "username": "admin",
+  "password": "admin"
+}
+
+###
+
+POST http://localhost:3003/api/blogs/
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWQiOiI2N2E2MjE4ZmQ2NTJjY2RmYTVlNWE2YjIiLCJpYXQiOjE3Mzg5NDA4MzJ9.FFvRATrAHb5yg7dQPorz8AqRQS5LfTwaEcmwQxdpUO8
+
+{
+  "title": "blog 6",
+  "likes": 34,
+  "url": "calabasa.ca",
+  "author": "castor oil",
+  "userId": "67a64f1451443da29ad9ea68"
+}
